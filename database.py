@@ -4,8 +4,6 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 import re
-
-
 # 🔹 Clean text
 def clean_text(text: str) -> str:
     text = re.sub(r"\n\s*\n", "\n\n", text)   # keep paragraph breaks
